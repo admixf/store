@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="registration">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <input id="name" name="name" placeholder="Name" autocomplete="name" required>
+            <input id="email" name="email" placeholder="Email" autocomplete="email" required>
+            <input id="password" name="password" type="password" placeholder="Password" autocomplete="new-password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required autocomplete="email">
+            <input type="password" id="loginPassword" placeholder="Password" required autocomplete="current-password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="content" style="display: none;">
+        <header>
+            <h1>Online Store</h1>
+            <button id="logoutButton">Logout</button>
+        </header>
+        <div class="container">
+            <h2>Products</h2>
+            <table id="productsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <h2>Shopping Cart</h2>
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <h3>Place Order</h3>
+            <form id="orderForm">
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
